@@ -1,0 +1,7 @@
+{% extends 'core/base.html' %}
+{% block content %}
+    <h3>Export Data</h3>
+    <hr>
+    <a href="{% url 'posts:export' 'xls' %}" class="btn btn-success">xls</a>
+    <a href="{% url 'posts:export' 'csv' %}" class="btn btn-warning">csv</a>
+{% endblock %}
